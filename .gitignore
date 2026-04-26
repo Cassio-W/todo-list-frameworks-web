@@ -1,0 +1,30 @@
+# Dependências
+node_modules/
+.npm/
+
+# Variáveis de Ambiente (SEGURANÇA!)
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build e Output (Angular e Node)
+dist/
+tmp/
+out-tsc/
+.angular/
+.sass-cache/
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db

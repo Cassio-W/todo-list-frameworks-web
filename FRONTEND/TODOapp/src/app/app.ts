@@ -16,7 +16,7 @@ export class App {
   apiURL: string;
 
   constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: Object) {
-    this.apiURL = 'https://apitarefas-guilherme254121-matheus257537.up.railway.app';
+    this.apiURL = 'http://localhost:3000';
     // Carrega a lista apenas no navegador, ignorando o servidor SSR da Vercel
     if (isPlatformBrowser(this.platformId)) {
       this.READ_tarefas();
