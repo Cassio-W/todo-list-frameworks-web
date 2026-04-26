@@ -16,7 +16,7 @@ export class App {
   apiURL: string;
 
   constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: Object) {
-    this.apiURL = 'http://localhost:3000';
+    this.apiURL = 'https://todo-list-frameworks-web-production.up.railway.app';
     // Carrega a lista apenas no navegador, ignorando o servidor SSR da Vercel
     if (isPlatformBrowser(this.platformId)) {
       this.READ_tarefas();
